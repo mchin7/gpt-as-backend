@@ -1,0 +1,13 @@
+{
+    "prompt": "This is a ledger table",
+    "state": [
+        {
+            "userId": "1",
+            "amount": "5"
+        },
+        {
+            "userId": 2,
+            "amount": "3"
+        }
+    ]
+}

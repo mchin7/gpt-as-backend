@@ -1,0 +1,36 @@
+{
+    "prompt": "This is a crypto app. Specifically it's a crypto app state store where there are mainly 2 objects: crypto coins and user accounts. Whenever a user purchase coins, the cash_balance should be deducted by corresponding amount, that is, the amount of coins being purchased multiply by the price of the coin. Similarly, when a coin is sold, the coin amount should be deducted and the cash_balance should be increased by the corresponding amount.",
+    "state": {
+        "coins": {
+            "BTC": {
+                "price": 88
+            }
+        },
+        "users": {
+            "1": {
+                "cash_balance": -15,
+                "coins": {
+                    "BTC": 24
+                }
+            },
+            "2": {
+                "cash_balance": 300,
+                "coins": {
+                    "BTC": 0
+                }
+            },
+            "3": {
+                "cash_balance": 300,
+                "coins": {
+                    "BTC": 0
+                }
+            },
+            "4": {
+                "cash_balance": 300,
+                "coins": {
+                    "BTC": 0
+                }
+            }
+        }
+    }
+}

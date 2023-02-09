@@ -1,0 +1,42 @@
+This is a crypto app. It consists of two collections: user accounts and coins price. These collections allow for basic CRUD. 
+
+API Call (indexes are zero-indexed):
+get_sum_user_cash_balance()
+
+Database State:
+"state": {
+        "coins": {
+            "BTC": {
+                "price": 5
+            }
+        },
+        "users": {
+            "1": {
+                "cash_balance": 321,
+                "coins": {
+                    "BTC": 19
+                }
+            },
+            "2": {
+                "cash_balance": 300,
+                "coins": {
+                    "BTC": 0
+                }
+            },
+            "3": {
+                "cash_balance": 122,
+                "coins": {
+                    "BTC": 30
+                }
+            }
+        }
+    }
+
+Rules:
+Output the API response as JSON prefixed with '!API response!:'. Then output the new database state as JSON, prefixed with '!New Database State!:'. 
+Optionally, if the API call requires arithmetic operation, converts the API call into a Python formula and prefix it with '!Python Formula!:'.
+
+Furthermore, If the API call is only requesting data, then don't change the database state, 
+but base your 'API Response' on what's in the database.
+Additionally, If insertion is performed on an existing userId in the state, return "ERROR: ID already exists"
+Finally, If deletion is performed on a non-existent userId in the state, return "ERROR: ID does not exist"

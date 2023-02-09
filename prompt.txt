@@ -1,0 +1,6 @@
+{db[app_name]["prompt"]}
+API Call (indexes are zero-indexed):
+{api_call}
+Database State:
+{db[app_name]["state"]}
+Output the API response as json prefixed with '!API response!:'. Then output the new database state as json, prefixed with '!New Database State!:'. If the API call is only requesting data, then don't change the database state, but base your 'API Response' off what's in the database.
